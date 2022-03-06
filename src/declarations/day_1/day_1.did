@@ -1,0 +1,3 @@
+service : {
+  inf_to_one: (nat) -> (text);
+}
