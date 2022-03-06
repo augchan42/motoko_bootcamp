@@ -100,7 +100,7 @@ actor {
     return sorted_array;
   };
   
-  func get_smallest(array : [Nat]) : <Nat, Nat> {
+  func get_smallest_value(array : [Nat]) : Nat {
     var smallest : Nat = array[0];
     var counter : Nat = 0;
 
@@ -110,7 +110,7 @@ actor {
       };
       counter += 1;
     };
-    return smallest, counter;  
+    return smallest;  
   };
 
   public func pubswap (array : [Nat], entry1 : Nat, entry2 : Nat) : async [Nat] {  
